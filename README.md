@@ -10,8 +10,8 @@ O App de clima foi desenvovildo para que os usuários possam consultar como est�
 * Umidade
 * Velocidade do vento
 
-  <img src="tela1.jpeg" >
-  <img src="tela2.jpeg" >
+![Texto Alternativo](clima-app/src/main/resources/imagens-readme/tela1.jpeg)
+![Texto Alternativo](clima-app/src/main/resources/imagens-readme/tela2.jpeg)
 
 ## :rocket: Tecnologias utilizadas
 
