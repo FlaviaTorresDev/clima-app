@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>⛅Aplicativo de clima⛅</title>
+    <title>⛅Weather App by GoldenCat⛅</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Weather Icons CSS -->
@@ -14,13 +14,13 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body text-center">
-                    <h1 class="card-title">Clima em <span th:text="${cidade}">Cidade</span>, <span th:text="${pais}">País</span></h1>
+                    <h1 class="card-title">Weather in <span th:text="${city}">City</span>, <span th:text="${country}">Country</span></h1>
                     <span th:classappend="${weatherIcon} + ' weather-icon'"></span>
-                    <p class="card-text"><strong>Descrição:</strong> <span th:text="${climaDescricao}">Descrição</span></p>
-                    <p class="card-text"><strong>Temperatura:</strong> <span th:text="${temperatura}">Temperatura</span>°C</p>
-                    <p class="card-text"><strong>Umidade:</strong> <span th:text="${Umidade}">Umidade</span>%</p>
-                    <p class="card-text"><strong>Velocidade do vento:</strong> <span th:text="${velocidadeVento}">Velocidade do vento</span> m/s</p>
-                    <a href="/" class="btn btn-secondary btn-block">Voltar</a>
+                    <p class="card-text"><strong>Description:</strong> <span th:text="${weatherDescription}">Description</span></p>
+                    <p class="card-text"><strong>Temperature:</strong> <span th:text="${temperature}">Temperature</span>°C</p>
+                    <p class="card-text"><strong>Humidity:</strong> <span th:text="${humidity}">Humidity</span>%</p>
+                    <p class="card-text"><strong>Wind Speed:</strong> <span th:text="${windSpeed}">Wind Speed</span> m/s</p>
+                    <a href="/" class="btn btn-secondary btn-block">Back</a>
                     <div th:if="${error}" class="alert alert-danger mt-3">
                         <p>Error: <span th:text="${error}"></span></p>
                     </div>

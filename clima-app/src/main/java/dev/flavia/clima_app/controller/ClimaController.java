@@ -1,5 +1,6 @@
 package dev.flavia.clima_app.controller;
 
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,11 +10,10 @@ import org.springframework.web.client.RestTemplate;
 
 import dev.flavia.clima_app.model.ClimaResponse;
 
-
 @Controller
 public class ClimaController {
-	
-	@Value("${api.key}")
+
+    @Value("${api.key}")
     private String apiKey;
 
     @GetMapping("/")
@@ -37,11 +37,9 @@ public class ClimaController {
             String weatherIcon = "wi wi-owm-" + climaResponse.getClima().get(0).getId();
             model.addAttribute("weatherIcon", weatherIcon);
         } else {
-            model.addAttribute("error", "Cidade não encontrada.");
+            model.addAttribute("error", "City not found.");
         }
 
         return "clima";
     }
 }
-
-
