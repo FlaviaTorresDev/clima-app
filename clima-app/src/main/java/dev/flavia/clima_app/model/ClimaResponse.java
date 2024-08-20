@@ -2,32 +2,71 @@ package dev.flavia.clima_app.model;
 
 import java.util.List;
 
-import lombok.Data;
 
-@Data
 public class ClimaResponse {
 	
-	private String nome;
+    private String nome;
     private Sistema sistema;
     private List<Clima> clima;
     private Main main;
     private Vento vento;
-    
-    
+
+    // Getters and setters
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Sistema getSistema() {
+        return sistema;
+    }
+
+    public void setSistema(Sistema sistema) {
+        this.sistema = sistema;
+    }
+
+    public List<Clima> getClima() {
+        return clima;
+    }
+
+    public void setClima(List<Clima> clima) {
+        this.clima = clima;
+    }
+
+    public Main getMain() {
+        return main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
+
+    public Vento getVento() {
+        return vento;
+    }
+
+    public void setVento(Vento vento) {
+        this.vento = vento;
+    }
+
     public static class Sistema {
-        private String país;
-        
+        private String pais;
+
         // Getters and setters
 
-        public String getPaís() {
-            return país;
+        public String getPais() {
+            return pais;
         }
 
-        public void setPaís(String país) {
-            this.país = país;
+        public void setPais(String pais) {
+            this.pais = pais;
         }
     }
-    
+
     public static class Clima {
         private int id;
         private String descricao;
@@ -50,7 +89,7 @@ public class ClimaResponse {
             this.descricao = descricao;
         }
     }
-    
+
     public static class Main {
         private double tempo;
         private int umidade;
@@ -87,6 +126,4 @@ public class ClimaResponse {
             this.velocidade = velocidade;
         }
     }
-
-
 }

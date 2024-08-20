@@ -29,7 +29,7 @@ public class ClimaController {
 
         if (climaResponse != null) {
             model.addAttribute("cidade", climaResponse.getNome());
-            model.addAttribute("país", climaResponse.getSistema().getPaís());
+            model.addAttribute("pais", climaResponse.getSistema().getPais());
             model.addAttribute("climaDescricao", climaResponse.getClima().get(0).getDescricao());
             model.addAttribute("temperatura", climaResponse.getMain().getTempo());
             model.addAttribute("umidade", climaResponse.getMain().getUmidade());
