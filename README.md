@@ -1,5 +1,5 @@
 <h1 align="center">
-  Aplicativo de Clima
+  Aplicativo de Clima 🌤️
 </h1>
 
 O App de clima foi desenvovildo para que os usuários possam consultar como está o clima da sua cidade de forma simples e prática!
